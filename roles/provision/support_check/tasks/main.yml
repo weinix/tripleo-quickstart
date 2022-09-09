@@ -6,4 +6,4 @@
 
               To run quickstart with out this check set 'quickstart.sh -e supported_distro_check=false'"
   failed_when: supported_distro_check
-  when: not (ansible_distribution == 'CentOS' or ansible_distribution == 'RedHat')
+  when: not (ansible_distribution == 'CentOS' or ansible_distribution == 'RedHat' or ansible_distribution == 'Rocky')
